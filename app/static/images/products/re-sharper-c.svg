@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <linearGradient id="a" x1="39.905%" x2="63.881%" y1="1.73%" y2="99.556%">
+            <stop offset="22.043%" stop-color="#C40B55"/>
+            <stop offset="68.28%" stop-color="#E343E6"/>
+            <stop offset="92.473%" stop-color="#F59252"/>
+        </linearGradient>
+        <linearGradient id="b" x1="66.916%" x2="24.963%" y1="104.703%" y2="25.931%">
+            <stop offset="11.29%" stop-color="#FFBD00"/>
+            <stop offset="58.602%" stop-color="#E343E6"/>
+            <stop offset="81.72%" stop-color="#EC841B"/>
+            <stop offset="93.548%" stop-color="#FFBD00"/>
+        </linearGradient>
+        <linearGradient id="c" x1="9.157%" x2="99.918%" y1=".047%" y2="104.204%">
+            <stop offset="12.903%" stop-color="#FFBD00"/>
+            <stop offset="63.978%" stop-color="#E343E6"/>
+            <stop offset="90.86%" stop-color="#C40B55"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="nonzero">
+        <path fill="url(#a)" d="M19.832 14.95l13.6 21.116-22.065 32.816L0 22.698z" transform="translate(.75 1.5)"/>
+        <path fill="url(#b)" d="M18.593 15.435L20.678 0l29.712 33.094-8.623 8.49 6.664 27.298H11.367z" transform="translate(.75 1.5)"/>
+        <path fill="url(#c)" d="M34.696 46.319h34.186L57.454 0H20.68z" transform="translate(.75 1.5)"/>
+        <path fill="#000" d="M13.931 14.66h42.52v42.52h-42.52z"/>
+        <path fill="#FFF" d="M17.907 20.188h8.06c2.234 0 3.947.596 5.14 1.788a5.45 5.45 0 0 1 1.51 4.03v.051a5.528 5.528 0 0 1-1.045 3.489 6.054 6.054 0 0 1-2.733 1.977l4.308 6.297h-4.534l-3.65-5.415h-3.198l.022 5.415h-3.88V20.188zm7.809 8.564a3.221 3.221 0 0 0 2.204-.68c.515-.459.797-1.125.769-1.814v-.05a2.25 2.25 0 0 0-.807-1.89 3.563 3.563 0 0 0-2.242-.629h-3.853v5.063h3.929zM17.84 49.207h15.946v2.657H17.84zM43.756 25.559h-3.963v-3.521h3.963V18.1h3.624v3.938h3.963v3.52H47.38v3.938h-3.624zM37.304 35.524h-3.963v-3.52h3.963v-3.939h3.624v3.938h3.963v3.521h-3.963v3.938h-3.624z"/>
+    </g>
+</svg>

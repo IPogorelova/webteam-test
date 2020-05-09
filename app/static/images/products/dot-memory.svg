@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <linearGradient id="a" x1="39.54%" x2="62.787%" y1="7.294%" y2="68.519%">
+            <stop offset="0%" stop-color="#7866FF"/>
+            <stop offset="2.287%" stop-color="#7E64FE"/>
+            <stop offset="19.476%" stop-color="#AA56F3"/>
+            <stop offset="34.93%" stop-color="#C94CEC"/>
+            <stop offset="47.959%" stop-color="#DC45E8"/>
+            <stop offset="56.989%" stop-color="#E343E6"/>
+            <stop offset="64.132%" stop-color="#E859BC"/>
+            <stop offset="81.854%" stop-color="#F48F58"/>
+            <stop offset="94.191%" stop-color="#FCB019"/>
+            <stop offset="100%" stop-color="#FFBD00"/>
+        </linearGradient>
+        <linearGradient id="b" x1="63.685%" x2="34.2%" y1="76.424%" y2="27.458%">
+            <stop offset="0%" stop-color="#7866FF"/>
+            <stop offset="20.177%" stop-color="#965CF8"/>
+            <stop offset="63.978%" stop-color="#E343E6"/>
+            <stop offset="96.774%" stop-color="#FFBD00"/>
+        </linearGradient>
+        <linearGradient id="c" x1="39.312%" x2="51.728%" y1="63.563%" y2="48.024%">
+            <stop offset="0%" stop-color="#E343E6"/>
+            <stop offset="100%" stop-color="#7866FF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="nonzero">
+        <path fill="url(#a)" d="M7.848 64.107L.088 36.961l50.738 7.473-7.267 24.448z" transform="translate(1.5 1.5)"/>
+        <path fill="url(#b)" d="M23.102.088l18.345 5.247L62.163 0l6.702 45.538-55.727-8.577z" transform="translate(1.5 1.5)"/>
+        <path fill="url(#c)" d="M66.274 28.416L25.218 14.148.088 19.541 0 37.05 48.761 50.49l20.121-5.113z" transform="translate(1.5 1.5)"/>
+        <path fill="#000" d="M14.681 14.681h42.52v42.52h-42.52z"/>
+        <path fill="#FFF" d="M18.668 49.225h15.944v2.657H18.668zM18.607 20.21h6.774c5.544 0 9.375 3.804 9.375 8.769v.05c0 4.964-3.831 8.82-9.375 8.82h-6.774v-17.64zm3.881 3.502v10.634h2.893a5.027 5.027 0 0 0 5.317-5.267v-.05a5.066 5.066 0 0 0-5.317-5.317h-2.893zM35.777 20.255h4.155l4.608 7.41 4.604-7.41h4.155v17.522h-3.83V26.339l-4.929 7.484h-.102l-4.88-7.41v11.364h-3.78z"/>
+    </g>
+</svg>
