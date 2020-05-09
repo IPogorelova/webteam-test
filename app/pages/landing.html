@@ -32,7 +32,37 @@
         </div>
     </header>
     <main class='main'>
-        <section class='hero'></section>
+        <section class='wt-container wt-offset-top-96 wt-offset-top-sm-48 hero'>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m wt-row_justify_between wt-row-sm_justify_start wt-row-sm_direction_column-reverse'>
+                <div class='wt-col wt-col-6 wt-col-sm-12 wt-offset-top-sm-48 wt-offset-top-12'>
+                    <picture class='hero__image'>
+                        <source
+                            type='image/webp'
+                            srcSet='/app/static/images/hero.webp 1x,
+                                    /app/static/images/hero@2x.webp 2x'
+                        />
+                        <source
+                            type='image/png'
+                            srcSet='/app/static/images/hero.png 1x,
+                                    /app/static/images/hero@2x.png 2x'
+                        />
+                        <img
+                            class='wt-offset-top-sm-24'
+                            alt='An abstract woman at the PC with icons of JetBrains products'
+                            src='/app/static/images/hero.png'
+                            srcSet='/app/static/images/hero.png 1x,
+                                    /app/static/images/hero@2x.png 2x'
+                        />
+                    </picture>
+                </div>
+                <div class='wt-col wt-col-6 wt-col-sm-12 wt-offset-top-sm-24'>
+                    <h1 class="title hero__title">All Products Pack</h1>
+                    <p class="wt-offset-top-24 wt-offset-top-sm-12 subtitle hero__subtitle">A complete full-stack developer&nbsp;toolkit</p>
+                    <a href='/' class="wt-offset-top-48 wt-offset-top-md-24 wt-offset-top-sm-12 button hero__button">I want it all</a>
+                    <p class="wt-offset-top-24 wt-offset-top-sm-12 text hero__text">An upgrade and switch option available</p>
+                </div>
+            </div>
+        </section>
         <section class='products'></section>
         <section class='products'></section>
         <section class='features'></section>

@@ -1,0 +1,46 @@
+.hero {
+
+  &__image img {
+      width: 100%;
+      max-width: 485px;
+
+      @media (--sm) {
+        max-width: unset;
+      }
+  }
+
+
+  &__title {
+
+    @media (--sm) {
+      font-size: 42px;
+      line-height: 48px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 385px;
+
+    @media (--sm) {
+      max-width: unset;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__button {
+    width: 174px;
+  }
+
+  &__text {
+    font-size: 15px;
+
+    @media (--sm) {
+      padding-top: 4px;
+    }
+  }
+}
