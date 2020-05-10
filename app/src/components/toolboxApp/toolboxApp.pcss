@@ -1,0 +1,95 @@
+.toolbox-app {
+  width: 100vw;
+  height: 320px;
+  min-height: fit-content;
+
+  @media (--sm) {
+    height: 280px;
+  }
+
+  &__inner {
+
+    @media (--sm) {
+      height: 100%;
+    }
+
+    & > .wt-row {
+
+      @media (--sm) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__image-wrapper {
+
+    @media (--sm) {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: auto;
+    height: 100%;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    @media (--sm) {
+      max-height: fit-content;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 300;
+    color: var(--white);
+
+    @media (--sm) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 12px;
+    color: var(--white-med);
+
+    @media (--sm) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link {
+    color: var(--orange);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.toolbox-wrapper {
+  //margin-bottom: 96px;
+  padding-top: 71px;
+
+  @media (--sm) {
+    padding-top: 46px;
+  }
+
+  /*@include wideTablet {
+    margin-bottom: 64px;
+  }
+*/
+}
