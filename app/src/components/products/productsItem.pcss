@@ -1,0 +1,34 @@
+.products-item {
+  cursor: pointer;
+
+  &__name {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--black);
+    transition: color var(--base-animation);
+
+    @media (--sm) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    margin-top: 6px;
+
+    @media (--md) {
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+  }
+
+  &_active {
+
+    .products-item__name {
+      color: var(--orange);
+    }
+  }
+}

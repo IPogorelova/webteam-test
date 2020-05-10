@@ -1,0 +1,39 @@
+.features {
+  margin-bottom: 13px;
+  padding-top: 71px;
+
+  @media (--sm) {
+    padding-top: 46px;
+  }
+
+  /*@include smallDesktop {
+    margin-bottom: 25px;
+  }
+
+  @include mobile {
+    margin-bottom: 18px;
+  }*/
+
+  &__image-wrapper {
+
+    @media (--sm) {
+      display: none;
+    }
+  }
+
+  &__image img {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  &__item {
+
+    @media (--sm) {
+      padding-top: 8px;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+  }
+}

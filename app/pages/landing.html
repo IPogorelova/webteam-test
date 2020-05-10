@@ -33,8 +33,8 @@
     </header>
     <main class='main'>
         <section class='wt-container wt-offset-top-96 wt-offset-top-sm-48 hero'>
-            <div class='wt-row wt-row_size_l wt-row-md_size_m wt-row_justify_between wt-row-sm_justify_start wt-row-sm_direction_column-reverse'>
-                <div class='wt-col wt-col-6 wt-col-sm-12 wt-offset-top-sm-48 wt-offset-top-12'>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m wt-row_justify_between wt-row-sm_justify_start'>
+                <div class='wt-col wt-col-6 wt-col-sm-12 wt-offset-top-sm-48 wt-offset-top-12 hero__image-wrapper'>
                     <picture class='hero__image'>
                         <source
                             type='image/webp'
@@ -57,15 +57,463 @@
                 </div>
                 <div class='wt-col wt-col-6 wt-col-sm-12 wt-offset-top-sm-24'>
                     <h1 class="title hero__title">All Products Pack</h1>
-                    <p class="wt-offset-top-24 wt-offset-top-sm-12 subtitle hero__subtitle">A complete full-stack developer&nbsp;toolkit</p>
-                    <a href='/' class="wt-offset-top-48 wt-offset-top-md-24 wt-offset-top-sm-12 button hero__button">I want it all</a>
-                    <p class="wt-offset-top-24 wt-offset-top-sm-12 text hero__text">An upgrade and switch option available</p>
+                    <p class="wt-offset-top-24 wt-offset-top-sm-12 subtitle hero__subtitle">
+                        A complete full-stack developer&nbsp;toolkit
+                    </p>
+                    <a href='/' class="wt-offset-top-48 wt-offset-top-md-24 wt-offset-top-sm-12 button hero__button">
+                        I want it all
+                    </a>
+                    <p class="wt-offset-top-24 wt-offset-top-sm-12 text hero__text">
+                        An upgrade and switch option available
+                    </p>
                 </div>
             </div>
         </section>
-        <section class='products'></section>
-        <section class='products'></section>
-        <section class='features'></section>
+        <section class='wt-container wt-offset-top-96 wt-offset-top-sm-48 products'>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m
+                        wt-row_justify_between wt-row-sm_justify_start
+                        wt-row-sm_direction_column-reverse
+                        wt-row_align-items_end wt-row-sm_align-items_start'
+            >
+                <div class='wt-col wt-col-6 wt-col-sm-12'>
+                    <h2 class='section-title products__title'>10 IDEs</h2>
+                </div>
+                <div class='wt-col wt-col-6 wt-col-sm-12'>
+                    <p class='text products__description products__description_outer'>
+                        Get access to all JetBrains desktop tools including 10 IDEs, 2 extensions and 3 profilers
+                    </p>
+                </div>
+            </div>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m
+                        wt-row_justify_between wt-row-sm_justify_start
+                        wt-offset-top-24 wt-offset-top-sm-0'
+            >
+                <div class='wt-col wt-col-6 wt-col-sm-12'>
+                    <div class='wt-row wt-row_size_0 wt-row-sm_size_m products__icons'>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='Intellij IDEA'
+                        >
+                            <img src="./app/static/images/products/idea.svg" alt="Intellij IDEA Ultimate">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">Intellij IDEA Ultimate</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">Kotlin</span>
+                                    <span class="products-item__tag tag">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='Rider'
+                        >
+                            <img src="./app/static/images/products/rider.svg" alt="Rider">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">Rider</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">C#</span>
+                                    <span class="products-item__tag tag">.NET</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='ReSharper Ultimate'
+                        >
+                            <img src="./app/static/images/products/re-sharper.svg" alt="ReSharper Ultimate">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">ReSharper Ultimate</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">C++</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='DataGrip'
+                        >
+                            <img src="./app/static/images/products/data-grip.svg" alt="DataGrip">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">DataGrip</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='PhpStorm'
+                        >
+                            <img src="./app/static/images/products/php-storm.svg" alt="PhpStorm">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">PhpStorm</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                    <span class="products-item__tag tag">database</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='WebStorm'
+                        >
+                            <img src="./app/static/images/products/web-storm.svg" alt="WebStorm">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">WebStorm</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='RubyMine'
+                        >
+                            <img src="./app/static/images/products/ruby-mine.svg" alt="RubyMine">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">RubyMine</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">Ruby</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='AppCode'
+                        >
+                            <img src="./app/static/images/products/app-code.svg" alt="AppCode">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">AppCode</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                    <span class="products-item__tag tag">database</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='CLion'
+                        >
+                            <img src="./app/static/images/products/c-lion.svg" alt="CLion">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">CLion</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">Ruby</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='PyCharm'
+                        >
+                            <img src="./app/static/images/products/py-charm.svg" alt="PyCharm">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">PyCharm</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                    <span class="products-item__tag tag">database</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='wt-col wt-col-6 products__info-wrapper'>
+                    <p class='text products__description products__description_inner'>
+                        Get access to all JetBrains desktop tools including 10 IDEs, 2 extensions and 3 profilers
+                    </p>
+                    <div class="wt-row wt-row_size_m wt-offset-top-24 products__info">
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='Intellij IDEA'
+                        >
+                            <a href="#" class="products-item__name">Intellij IDEA Ultimate</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">Kotlin</span>
+                                <span class="products-item__tag tag">Java</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='Rider'
+                        >
+                            <a href="#" class="products-item__name">Rider</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">C#</span>
+                                <span class="products-item__tag tag">.NET</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='ReSharper Ultimate'
+                        >
+                            <a href="#" class="products-item__name">ReSharper Ultimate</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">C++</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='DataGrip'
+                        >
+                            <a href="#" class="products-item__name">DataGrip</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">C</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='PhpStorm'
+                        >
+                            <a href="#" class="products-item__name">PhpStorm</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                                <span class="products-item__tag tag">database</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='WebStorm'
+                        >
+                            <a href="#" class="products-item__name">WebStorm</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='RubyMine'
+                        >
+                            <a href="#" class="products-item__name">RubyMine</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">Ruby</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='AppCode'
+                        >
+                            <a href="#" class="products-item__name">AppCode</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                                <span class="products-item__tag tag">database</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='CLion'
+                        >
+                            <a href="#" class="products-item__name">CLion</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">Ruby</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='PyCharm'
+                        >
+                            <a href="#" class="products-item__name">PyCharm</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                                <span class="products-item__tag tag">database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='wt-container wt-offset-top-48 wt-offset-top-sm-24 products'>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m
+                        wt-row_justify_between wt-row-sm_justify_start
+                        wt-row-sm_direction_column-reverse
+                        wt-row_align-items_end wt-row-sm_align-items_start'
+            >
+                <div class='wt-col wt-col-6 wt-col-sm-12'>
+                    <h2 class='section-title products__title'>2&nbsp;Extentions & 3&nbsp;Profilers</h2>
+                </div>
+            </div>
+            <div class='wt-row wt-row_size_l wt-row-md_size_m
+                        wt-row_justify_between wt-row-sm_justify_start
+                        wt-offset-top-48 wt-offset-top-md-24 wt-offset-top-sm-0'
+            >
+                <div class='wt-col wt-col-6 wt-col-sm-12'>
+                    <div class='wt-row wt-row_size_0 wt-row-sm_size_m products__icons'>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='ReSharper'
+                        >
+                            <img src="./app/static/images/products/re-sharper.svg" alt="ReSharper">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">ReSharper</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                    <span class="products-item__tag tag">database</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='dotTrace'
+                        >
+                            <img src="./app/static/images/products/dot-trace.svg" alt="dotTrace">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">dotTrace</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">Ruby</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-6 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='dotMemory'
+                        >
+                            <img src="./app/static/images/products/dot-memory.svg" alt="dotMemory">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">dotMemory</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='ReSharper C++'
+                        >
+                            <img src="./app/static/images/products/re-sharper-c.svg" alt="ReSharper C++">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">ReSharper C++</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">C++</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='wt-col wt-col-3 wt-col-md-4 wt-col-sm-6
+                                    wt-offset-top-48 wt-offset-top-sm-24
+                                    products__icon js-product-icon'
+                             data-name='dotCover'
+                        >
+                            <img src="./app/static/images/products/dot-cover.svg" alt="dotCover">
+                            <div class="products__item products-item">
+                                <a href="#" class="products-item__name">dotCover</a>
+                                <div class="products-item__tags">
+                                    <span class="products-item__tag tag">mysql</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='wt-col wt-col-6 products__info-wrapper'>
+                    <div class="wt-row wt-row_size_m wt-offset-top-24 products__info">
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='ReSharper'
+                        >
+                            <a href="#" class="products-item__name">ReSharper</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                                <span class="products-item__tag tag">database</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='dotTrace'
+                        >
+                            <a href="#" class="products-item__name">dotTrace</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">Ruby</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='dotMemory'
+                        >
+                            <a href="#" class="products-item__name">dotMemory</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">C</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='ReSharper C++'
+                        >
+                            <a href="#" class="products-item__name">ReSharper C++</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">C++</span>
+                            </div>
+                        </div>
+                        <div class="wt-col wt-col-6 wt-offset-top-24 products__item
+                                    products-item js-product-info"
+                             data-name='dotCover'
+                        >
+                            <a href="#" class="products-item__name">dotCover</a>
+                            <div class="products-item__tags">
+                                <span class="products-item__tag tag">mysql</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class='separator wt-offset-top-96 wt-offset-top-sm-48'/>
+        <section class="wt-container wt-offset-top-24 features" id="overview">
+            <div class="wt-row wt-row_size_l wt-row-md_size_m wt-row-sm_direction_column">
+                <div class="wt-col wt-col-6 features__image-wrapper">
+                    <picture class="features__image">
+                        <source
+                            type="image/webp"
+                            srcset="./app/static/images/features.webp 1x,
+                                    ./app/static/images/features@2x.webp 2x"
+                        >
+                        <source
+                            type="image/png"
+                            srcset="./app/static/images/features.png 1x,
+                                    ./app/static/images/features@2x.png 2x"
+                        >
+                        <img
+                            alt="An abstract man near the schedule"
+                            src="./app/static/images/features.png"
+                            srcset="./app/static/images/features.png 1x,
+                                    ./app/static/images/features@2x.png 2x"
+                        >
+                    </picture>
+                </div>
+                <div class="wt-col wt-col-6 wt-col-sm-12 features__list">
+                    <div class="features__item features-item">
+                        <img class="features-item__icon" src="./app/static/images/features/discount.svg" alt="discount tag">
+                        <span class="features-item__title">Great value</span>
+                        <p class="features-item__description">Get 10 IDEs for the price of 2.</p>
+                    </div>
+                    <div class="features__item features-item wt-offset-top-48 wt-offset-top-sm-24">
+                        <img class="features-item__icon" src="./app/static/images/features/offer.svg" alt="plus sign">
+                        <span class="features-item__title">Flexibility</span>
+                        <p class="features-item__description">Use different tools for different projects on multiple machines as and when you need them. Easily switch between the tools under the All Products Pack license.</p>
+                    </div>
+                    <div class="features__item features-item wt-offset-top-48 wt-offset-top-sm-24">
+                        <img class="features-item__icon" src="./app/static/images/features/use-account.svg" alt="toggle">
+                        <span class="features-item__title">Simple license management</span>
+                        <p class="features-item__description">One unique license includes all the JetBrains desktop tools. Get unlimited access to all of them.</p>
+                    </div>
+                    <div class="features__item features-item wt-offset-top-48 wt-offset-top-sm-24">
+                        <img class="features-item__icon" src="./app/static/images/features/learn.svg" alt="pupil hat">
+                        <span class="features-item__title">Further your skills</span>
+                        <p class="features-item__description">Advance your programming skills with the best professional tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class='toolbox-app'></section>
         <section class='users'></section>
         <section class='faq'></section>

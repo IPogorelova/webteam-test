@@ -117,19 +117,6 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 47%;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: transparent;
-  z-index: 2;
-
-  &_shown {
-    display: block;
-  }
-}
-
 .link {
   color: var(--grey-dark);
   transition: color var(--base-animation);
@@ -217,8 +204,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .separator {
   width: 100%;
   height: 1px;
-  margin: 80px 0 9px;
-  border: 1px solid var(--grey-light);
+  border: none;
+  border-bottom: 1px solid var(--grey-light);
+
+  @media (--sm) {
+    padding-top: 20px;
+  }
 
   /*@include smallDesktop {
     margin-top: 74px;

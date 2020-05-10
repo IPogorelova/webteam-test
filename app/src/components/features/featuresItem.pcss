@@ -1,0 +1,37 @@
+.features-item {
+  display: flex;
+  flex-direction: column;
+
+/*  @include tablet {
+    margin-bottom: 30px;
+  }*/
+
+  &__icon {
+    width: 48px;
+    margin-bottom: 14px;
+
+    @media (--sm) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+
+    @media (--sm) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    margin-top: 0;
+    color: $grey-dark;
+
+    @media (--sm)  {
+      max-width: 500px;
+    }
+  }
+}

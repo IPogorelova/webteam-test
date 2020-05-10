@@ -1,0 +1,26 @@
+.tag {
+  display: block;
+  min-width: 54px;
+  margin-right: 12px;
+  padding: 4px 26px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--grey-dark);
+  background-color: var(--grey);
+  border-radius: 4px;
+
+  @media (--md) {
+    min-width: 44px;
+    margin-top: 5px;
+    padding: 4px 12px;
+  }
+
+  @media (--sm) {
+    padding: 5px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
