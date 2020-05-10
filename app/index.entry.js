@@ -11,6 +11,7 @@ import "./src/components/products/tag.pcss";
 import "./src/components/features/features.pcss";
 import "./src/components/features/featuresItem.pcss";
 import "./src/components/toolboxApp/toolboxApp.pcss";
+import "./src/components/faq/faq.pcss";
 
 import mobileNav from './src/components/header/header'
 import productsInteraction from './src/components/products/products'
