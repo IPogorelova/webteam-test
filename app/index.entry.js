@@ -11,6 +11,7 @@ import "./src/components/products/tag.pcss";
 import "./src/components/features/features.pcss";
 import "./src/components/features/featuresItem.pcss";
 import "./src/components/toolboxApp/toolboxApp.pcss";
+import "./src/components/users/users.pcss";
 import "./src/components/faq/faq.pcss";
 import "./src/components/contacts/contacts.pcss";
 import "./src/components/footer/footer.pcss";
