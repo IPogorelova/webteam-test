@@ -94,3 +94,35 @@
     margin-bottom: 0;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .products {
+
+    .wt-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wt-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wt-col-3 {
+      width: 22%;
+    }
+
+    .wt-col-4 {
+      width: 30%;
+    }
+
+    .wt-col-6 {
+      width: 47%;
+    }
+
+    .products__icons {
+      justify-content: flex-start;
+    }
+  }
+}

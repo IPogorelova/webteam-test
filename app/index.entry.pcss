@@ -1,24 +1,3 @@
-.example-for-breakpoints {
-  @media (--xlg) {
-    color: blue;
-  }
-
-  @media (--lg) {
-    color: green;
-  }
-
-  @media (--md) {
-    color: white;
-  }
-
-  @media (--sm) {
-    color: black;
-  }
-
-  color: red;
-}
-
-/* MY STYLES */
 :root {
   /*colors*/
   --black: #27282c;
@@ -41,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -56,7 +39,6 @@ body {
   line-height: 28px;
   font-weight: normal;
   color: var(--black);
-  scroll-behavior: smooth;
 }
 
 a {
@@ -248,4 +230,3 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--grey-light);
   background-color: var(--white);
 }
-

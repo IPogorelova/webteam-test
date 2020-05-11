@@ -16,33 +16,39 @@ const productsInteraction = () => {
     }
 
     addListeners() {
-      productIconNodes.forEach(icon => icon.addEventListener('mouseenter', (e) => {
-        let target = e.target
-        this.setActiveIcon(icon, target)
-      }))
+      for (let i = 0, len = productIconNodes.length; i < len; i++) {
+        productIconNodes[i].addEventListener('mouseenter', (e) => {
+          let target = e.target
+          this.setActiveIcon(productIconNodes[i], target)
+        })
+        productIconNodes[i].addEventListener('mouseleave', (e) => {
+          let target = e.target
+          this.setInactiveIcon(productIconNodes[i], target)
+        })
+      }
 
-      productIconNodes.forEach(icon => icon.addEventListener('mouseleave', (e) => {
-        let target = e.target
-        this.setInactiveIcon(icon, target)
-      }))
+      for (let i = 0, len = productInfoNodes.length; i < len; i++) {
+        productInfoNodes[i].addEventListener('mouseenter', (e) => {
+          let target = e.target
+          this.setActiveInfo(productInfoNodes[i], target)
+        })
+        productInfoNodes[i].addEventListener('mouseleave', (e) => {
+          let target = e.target
+          this.setInactiveInfo(productInfoNodes[i], target)
+        })
+      }
 
-      productInfoNodes.forEach(item => item.addEventListener('mouseenter', (e) => {
-        let target = e.target
-        this.setActiveInfo(item, target)
-      }))
+      for (let i = 0, len = this.iconsWrapperNodes.length; i < len; i++) {
+        this.iconsWrapperNodes[i].addEventListener('mouseleave', (e) => {
+          this.resetActiveInfos(e.target)
+        })
+      }
 
-      productInfoNodes.forEach(item => item.addEventListener('mouseleave', (e) => {
-        let target = e.target
-        this.setInactiveInfo(item, target)
-      }))
-
-      this.iconsWrapperNodes.forEach(wrapper => wrapper.addEventListener('mouseleave', (e) => {
-        this.resetActiveInfos(e.target)
-      }))
-
-      this.infoWrapperNodes.forEach(wrapper => wrapper.addEventListener('mouseleave', (e) => {
-        this.resetActiveInfos(e.target)
-      }))
+      for (let i = 0, len = this.infoWrapperNodes.length; i < len; i++) {
+        this.infoWrapperNodes[i].addEventListener('mouseleave', (e) => {
+          this.resetActiveInfos(e.target)
+        })
+      }
     }
 
     setActiveIcon(icon, target) {
@@ -103,9 +109,9 @@ const productsInteraction = () => {
   }
 
   window.productsList = []
-  productIconNodes.forEach((node) => {
-    window.productsList.push(new ProductsInteraction(node))
-  })
+  for (let i = 0, len = productIconNodes.length; i < len; i++) {
+    window.productsList.push(new ProductsInteraction(productIconNodes[i]))
+  }
 }
 
 export default productsInteraction

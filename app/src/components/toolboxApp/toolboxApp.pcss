@@ -92,3 +92,27 @@
     padding-top: 46px;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .toolbox-app {
+
+    .wt-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wt-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wt-col-3 {
+      width: 22%;
+    }
+
+    .wt-col-8 {
+      width: 70%;
+    }
+  }
+}

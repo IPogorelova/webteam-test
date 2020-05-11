@@ -156,3 +156,32 @@
     }
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .footer {
+
+    .wt-row {
+      display: flex;
+    }
+
+    .wt-col:not('.footer__logo_mob') {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wt-col-2 {
+      width: 15%;
+    }
+
+    .footer__logo {
+      margin-right: 37px;
+    }
+
+    .footer__copyright {
+      .footer__text {
+        margin-right: 24px;
+      }
+    }
+  }
+}
