@@ -21,6 +21,13 @@ import productsInteraction from './src/components/products/products'
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  let windowWidth = window.innerWidth
+
+  window.addEventListener('resize', () => {
+    windowWidth = window.innerWidth
+  })
+
   mobileNav()
-  productsInteraction()
+
+  if (windowWidth > 640) productsInteraction()
 });

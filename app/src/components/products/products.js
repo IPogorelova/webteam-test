@@ -1,7 +1,6 @@
 const productsInteraction = () => {
   const productIconNodes = document.querySelectorAll('.js-product-icon')
   const productInfoNodes = document.querySelectorAll('.js-product-info')
-  let windowWidth = window.innerWidth
 
   if (!productIconNodes || !productInfoNodes) {
     return
@@ -10,23 +9,39 @@ const productsInteraction = () => {
   class ProductsInteraction {
     constructor(el) {
       this.element = el
+      this.iconsWrapperNodes = document.querySelectorAll('.products__icons')
+      this.infoWrapperNodes = document.querySelectorAll('.products__info')
 
       this.addListeners()
     }
 
     addListeners() {
-      window.addEventListener('resize', () => {
-        windowWidth = window.innerWidth
-      })
-
       productIconNodes.forEach(icon => icon.addEventListener('mouseenter', (e) => {
         let target = e.target
         this.setActiveIcon(icon, target)
       }))
 
-      productIconNodes.forEach(icon => icon.addEventListener('mouseout', (e) => {
+      productIconNodes.forEach(icon => icon.addEventListener('mouseleave', (e) => {
         let target = e.target
         this.setInactiveIcon(icon, target)
+      }))
+
+      productInfoNodes.forEach(item => item.addEventListener('mouseenter', (e) => {
+        let target = e.target
+        this.setActiveInfo(item, target)
+      }))
+
+      productInfoNodes.forEach(item => item.addEventListener('mouseleave', (e) => {
+        let target = e.target
+        this.setInactiveInfo(item, target)
+      }))
+
+      this.iconsWrapperNodes.forEach(wrapper => wrapper.addEventListener('mouseleave', (e) => {
+        this.resetActiveInfos(e.target)
+      }))
+
+      this.infoWrapperNodes.forEach(wrapper => wrapper.addEventListener('mouseleave', (e) => {
+        this.resetActiveInfos(e.target)
       }))
     }
 
@@ -36,9 +51,10 @@ const productsInteraction = () => {
         childNodes.map(item => item.classList.add('products__icon_disabled'))
         icon.classList.remove('products__icon_disabled')
       }
-      let activeInfo = [...productInfoNodes].filter(item => item.dataset.name === target.dataset.name)
-
-      activeInfo.classList.add('products-item_active')
+      [...productInfoNodes].map(item => {
+        item.classList.remove('products-item_active')
+        if (item.dataset.name === target.dataset.name) item.classList.add('products-item_active')
+      })
     }
 
     setInactiveIcon(icon, target) {
@@ -46,15 +62,43 @@ const productsInteraction = () => {
         let childNodes = [...icon.parentNode.children]
         childNodes.map(item => item.classList.remove('products__icon_disabled'))
       }
-      [...productInfoNodes].map(item => {if (item.dataset.name === target.dataset.name) item.classList.remove('products-item_active')})
+      [...productInfoNodes].map(item => {
+        item.classList.remove('products-item_active')
+      })
     }
 
-    setActiveInfo() {
-
+    setActiveInfo(item, target) {
+      if (item.dataset.name === target.dataset.name) {
+        let childNodes = [...item.parentNode.children]
+        childNodes.map(item => item.classList.remove('products-item_active'))
+        target.classList.add('products-item_active');
+      }
+      [...productIconNodes].map(icon => {
+        if (icon.dataset.name === target.dataset.name) {
+          let childNodes = [...icon.parentNode.children]
+          childNodes.map(icon => icon.classList.add('products__icon_disabled'))
+          icon.classList.remove('products__icon_disabled')
+        }
+      })
     }
 
-    setInactiveInfo() {
+    setInactiveInfo(item, target) {
+      target.classList.remove('products-item_active');
+      [...productIconNodes].map(icon => {
+        let childNodes = [...icon.parentNode.children]
+        childNodes.map(icon => icon.classList.remove('products__icon_disabled'))
+      })
+    }
 
+    resetActiveInfos(target) {
+      let children = document.querySelector(`[data-products=${target.dataset.products}]`).children;
+      [...children].map(item => {
+        if (item.classList.contains('products__icon')) {
+          item.classList.remove('products__icon_disabled')
+        } else if (item.classList.contains('products-item')) {
+          item.classList.remove('products-item_active')
+        }
+      })
     }
   }
 
