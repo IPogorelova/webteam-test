@@ -23,6 +23,11 @@
 
   &__image-wrapper {
 
+    @media (--md) {
+      display: flex;
+      justify-content: center;
+    }
+
     @media (--sm) {
       display: none;
     }
@@ -81,15 +86,9 @@
 }
 
 .toolbox-wrapper {
-  //margin-bottom: 96px;
   padding-top: 71px;
 
   @media (--sm) {
     padding-top: 46px;
   }
-
-  /*@include wideTablet {
-    margin-bottom: 64px;
-  }
-*/
 }

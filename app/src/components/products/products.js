@@ -106,10 +106,6 @@ const productsInteraction = () => {
   productIconNodes.forEach((node) => {
     window.productsList.push(new ProductsInteraction(node))
   })
-  // productIconNodes.forEach((node) => {
-  //   new ProductsInteraction(node)
-  // })
-
 }
 
 export default productsInteraction

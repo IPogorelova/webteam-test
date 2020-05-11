@@ -76,48 +76,17 @@
 
   &__info {
     margin-top: -24px;
+    margin-left: -16px;
 
-/*    &_no-descr {
-      padding-top: 64px;
-    }*/
+    @media (--sm) {
+      margin-left: unset;
+    }
   }
 
   &__info-wrapper {
 
     @media (--sm) {
       display: none;
-    }
-  }
-
-  &__items {
-
-    /*@include tablet {
-      display: flex;
-      flex-wrap: wrap;
-    }*/
-  }
-
-  &__item {
-/*    width: 40%;
-    margin-right: 10%;
-    margin-bottom: 30px;*/
-
-    /*@include smallDesktop {
-      width: 45%;
-      margin-right: 5%;
-    }
-
-    @include mobile {
-      margin-bottom: 12px;
-    }*/
-
-    &:nth-of-type(2n) {
-/*      margin-right: 0;
-      margin-left: 10%;*/
-
-      /*@include smallDesktop {
-        margin-left: 5%;
-      }*/
     }
   }
 
